@@ -23,16 +23,15 @@ const kittyPrompts = {
   orangeKittyNames() {
     // Return an array of just the names of kitties who are orange e.g.
     // ['Tiger', 'Snickers']
-    const result = [];
-    orangeKitties = kitties.filter(kitty => kitty.color === 'orange')
-    orangeKitties.forEach(function(kitty) {
-      result.push(kitty.name);
-      return result;
-    })
+    orangeKitties = kitties.filter(kitty => kitty.color === 'orange');
+    const result = orangeKitties.map(kitty => kitty.name);
+     return result;
+    },
 
     // Annotation:
-    // Write your annotation here as a comment
-  },
+    // I created a new array of orangeKitties which holds the results of filtering through 
+    // the original kitties array for kitties with the value of orange for their color property. 
+    // Then, I set the const result to an array that just held the names of those orange kitties.
 
   sortByAge() {
     // Sort the kitties by their age
@@ -57,8 +56,10 @@ const kittyPrompts = {
     //   color: 'orange'
     // },
     // ...etc]
-
-    const result = 'REPLACE WITH YOUR RESULT HERE';
+    kitties.forEach(function(kitty) {
+      kitty.age = kitty.age + 2;
+    })
+    const result = kitties;
     return result;
   }
 };
