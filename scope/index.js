@@ -35,6 +35,7 @@ const scope = {
       { 'C': 'CardiB'},
       { 'D': 'Paul'}
     ]
+    
     return result;
 
     // Annotation:
@@ -81,6 +82,7 @@ const scope = {
       { 'C': 64},
       { 'D': 30}
     ]
+
     return result;
 
     // Annotation:
@@ -120,6 +122,7 @@ const scope = {
       { 'C': 64},
       { 'D': 30}
     ]
+
     return result;
 
     // Annotation:
