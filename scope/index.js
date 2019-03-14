@@ -29,11 +29,23 @@ const scope = {
 
     // Log D: personC
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
+    const result = [
+      { 'A': 'Ben'},
+      { 'B': 'CardiB'},
+      { 'C': 'CardiB'},
+      { 'D': 'Paul'}
+    ]
     return result;
 
     // Annotation:
-    // Write your annotation here as a comment
+    // We start with three global variables of 
+    // 'personA,' 'personB,' and 'personC.' 
+    // The function beautifyPerson() is called
+    // within changePerson(). If personB includes
+    // the letter 'B' (it does, personB is assigned
+    // to 'Ben'), personB is reassignd to person, which,
+    // in the changePerson() function is now assigned to 
+    // 'CardiB'. personC is set to personA which is 'Paul.'
   },
 
   exerciseB() {
@@ -46,24 +58,29 @@ const scope = {
         let number = 28;
       }
 
-      // Log A: number
+      // Log A: number 
 
       function newNumber() {
         number = 64;
 
-        // Log B: number
+        // Log B: number 
       }
 
       newNumber();
 
-      // Log C: number
+      // Log C: number 
     }
 
     numberFunction();
 
-    // Log D: number
+    // Log D: number 
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
+    const result = [
+      { 'A': 75},
+      { 'B': 64},
+      { 'C': 64},
+      { 'D': 30}
+    ]
     return result;
 
     // Annotation:
@@ -97,7 +114,12 @@ const scope = {
 
     // Log D: greeting
 
-    const result = 'REPLACE WITH YOUR RESULT HERE';
+    const result = [
+      { 'A': 75},
+      { 'B': 64},
+      { 'C': 64},
+      { 'D': 30}
+    ]
     return result;
 
     // Annotation:
